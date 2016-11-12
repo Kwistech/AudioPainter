@@ -16,7 +16,7 @@ class AudioPainter:
         pygame.init()
         self.width, self.height = 600, 600
         self.display = pygame.display.set_mode((self.width, self.height))
-        self.filename = "The Campaign Against Notus.wav"
+        self.filename = "Pi.wav"
         self.audio_data = self.get_audio_data()
 
         self.threads = []
@@ -46,26 +46,23 @@ class AudioPainter:
         pygame.draw.ellipse(self.display, color, (x, y, length, height))
 
     def draw(self, num, color, x, y, length=None, height=None, radius=None):
-        if num == 1:
+        if num % 2 == 0 and num % 5 == 0:
             self.create_rect(color, x, y, length, height)
-        elif num == 2:
+        elif num % 2 == 0 and num % 3 == 0:
             self.create_circle(color, x, y, radius)
-        elif num == 3:
+        else:
             self.create_ellipse(color, x, y, length, height)
 
     def run(self):
-        for data in self.audio_data:
+        for i, data in enumerate(self.audio_data):
             self.number_handler(data)
-            color = (data[0], data[1], data[0])
+            color = (data[1], data[0], data[1])
 
-            for i in range(1, 4):
-                x, y = randint(1, self.width), randint(1, self.height)
-                length, height, radius = data[0], data[1], data[0]
-                thread = Thread(target=self.draw(i, color, x, y,
-                                                 length, height, radius))
-                self.threads.append(thread)
-                thread.start()
+            x, y = randint(1, self.width), randint(1, self.height)
+            length, height = randint(1, 5), randint(1, 5)
+            radius = randint(1, 5)
 
+            self.draw(i, color, x, y, length, height, radius)
             pygame.display.update()
 
             for event in pygame.event.get():
