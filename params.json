@@ -1,6 +1,0 @@
-{
-  "name": "AudioPainter",
-  "tagline": "Paints an image using data from a .wav file.",
-  "body": "# AudioPainter\r\nPaints an image using data from a .wav file.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
