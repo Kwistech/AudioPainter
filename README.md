@@ -20,4 +20,4 @@ Check the project's [Wiki](https://github.com/Kwistech/AudioPainter/wiki) for mo
 
 ## Screenshot Example
 
-<img src="https://s13.postimg.org/ias0cfb1z/Audio_Painter_Image_1.png" hspace="10">
+<img src="https://s12.postimg.org/e0o9wccql/Audio_Painter_Image_1.png" hspace="10">
