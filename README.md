@@ -17,3 +17,7 @@ Check the project's [Wiki](https://github.com/Kwistech/AudioPainter/wiki) for mo
 1. Once the project is cloned to your local drive, copy the .wav file you want to process to the projects root directory.
 2. Then, open main.py in your Python editor of choice and change the class variable named "self.filename" (located in the class AudioPainter constructor method) to the .wav files full name (including the extention ".wav"). 
 3. Run main.py and the program will create a window and display the visual representation of the .wav file.
+
+## Screenshot Example
+
+<img src="https://s13.postimg.org/ias0cfb1z/Audio_Painter_Image_1.png" hspace="10">
