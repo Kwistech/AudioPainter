@@ -18,6 +18,7 @@ Check the project's [Wiki](https://github.com/Kwistech/AudioPainter/wiki) for mo
 2. Then, open main.py in your Python editor of choice and change the class variable named "self.filename" (located in the class AudioPainter constructor method) to the .wav files full name (including the extention ".wav"). 
 3. Run main.py and the program will create a window and display the visual representation of the .wav file.
 
-## Screenshot Example
+## Screenshot Examples
 
-<img src="https://s12.postimg.org/e0o9wccql/Audio_Painter_Image_1.png" hspace="10">
+<img src="https://s12.postimg.org/e0o9wccql/Audio_Painter_Image_1.png" hspace="10" align="left">
+<img src="https://s22.postimg.org/l24prnenl/Audio_Painter_Image_2.png" hspace="10">
